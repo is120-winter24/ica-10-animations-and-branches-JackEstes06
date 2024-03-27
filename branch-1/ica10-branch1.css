@@ -1,2 +1,11 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
 /* Jack Estes */
+
+.logo:hover {
+    transition: transform 2s;
+    transform: scale(1.25,1.25) rotate(10deg);
+}
+.logo {
+    transition: transform 2s;
+    transform: scale(1,1) rotate(0deg);
+}
