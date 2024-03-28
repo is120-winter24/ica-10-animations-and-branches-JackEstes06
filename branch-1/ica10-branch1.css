@@ -19,7 +19,6 @@
     font-size: 30px;
     animation: box4Move 5s infinite;
 }
-
 @keyframes box4Move {
     0%,100% { 
         background-color: mediumseagreen;
@@ -36,4 +35,22 @@
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
+}
+
+/* Make a notification banner that comes in from bottom right of screen every x seconds */
+aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 3vh;
+    right: -30vh;
+    width: 30vh;
+    padding: 2vh;
+    background-color: #333;
+    color: #f4f4f4;
+    animation: bannerSlide 20s infinite;
+}
+@keyframes bannerSlide {
+    20%, 80% {right: -30vh;}
+    30%, 70% {right: 0;}
 }
