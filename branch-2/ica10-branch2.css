@@ -1,1 +1,54 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+
+/* Task 2 */
+    .box-6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .special{
+        background-image: linear-gradient(270deg, black, white);
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        transition: background-size 250ms linear;
+    }
+
+        .special:hover {
+            background-size: 100% 3px;
+        }
+
+/* Task 5 */
+    .box-3{
+        background-image: linear-gradient(lightgray, purple);
+        animation: b3bg 8s linear infinite;
+    }
+
+        @keyframes b3bg {
+            50% {filter:hue-rotate(0.5turn);}
+            100% {filter:hue-rotate(1turn);}
+        }
+
+/* Task 6 */
+    #dathingy{
+        animation: svgrotation 2.5s linear infinite;
+    }
+
+        @keyframes svgrotation {
+            100% {transform: rotate(360deg);}
+        }
+
+    #fish{
+        z-index: 0;
+        position: absolute;
+        width: 70%;
+        left:15%;
+        top:17%;
+        animation: fishrotate .1s linear infinite;
+    }
+
+        @keyframes fishrotate {
+            100% {transform: rotateY(360deg);}
+        }
